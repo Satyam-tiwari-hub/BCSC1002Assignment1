@@ -11,8 +11,7 @@ public class Student {
     private int numberOfBooksIssuedByTheStudent;
     private String[] namesOfTheBooksIssuedByTheStudent;
 
-    public Student(String firstName, String middleName, String lastName, long universityRollNumber,
-                   int numberOfBooksIssuedByTheStudent, String[] namesOfTheBooksIssuedByTheStudent) {
+    public Student() {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -75,7 +74,7 @@ public class Student {
      * @param numberOfBooksIssuedByTheStudent Total number of books issued.
      * @return return int value
      */
-    public int numberOfBooksIssued(int numberOfBooksIssuedByTheStudent) {
+    public int numberOfBooksIssued() {
         return numberOfBooksIssuedByTheStudent;
     }
 

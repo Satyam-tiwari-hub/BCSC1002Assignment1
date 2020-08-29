@@ -7,6 +7,7 @@
 package execution;
 
 import definitions.Book;
+import definitions.Student;
 
 import java.util.Scanner;
 
@@ -22,6 +23,7 @@ public class FrontDesk {
         Book book = new Book();
         String bookName;
         String previouslyIssuedBook;
+        Student student = new Student();
         int allIssuedBooks;
         do {
             System.out.println("_=_=__=_=_" + "Welcome To The Front Desk" + "_=_=__=_=_");
@@ -46,10 +48,7 @@ public class FrontDesk {
                     book.doReturn(bookName);
                     break;
                 case ALL_ISSUED_BOOKS:
-
-
-                    ;
-
+                    student.numberOfBooksIssued();
 
             }
 
