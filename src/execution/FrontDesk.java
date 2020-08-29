@@ -7,6 +7,11 @@
 package execution;
 
 public class FrontDesk {
+    public static final int NEW_BOOK = 1;
+    public static final int PREVIOUSLY_ISSUED_BOOK = 2;
+    public static final int ALL_ISSUED_BOOKS = 3;
+    public static final int EXIT = 4;
+
     public static void main(String[] args) {
 
     }
