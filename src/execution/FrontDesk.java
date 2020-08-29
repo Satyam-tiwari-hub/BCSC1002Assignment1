@@ -45,7 +45,10 @@ public class FrontDesk {
                     previouslyIssuedBook = scanner.nextLine();
                     book.doReturn(bookName);
                     break;
-                ;
+                case ALL_ISSUED_BOOKS:
+
+
+                    ;
 
 
             }

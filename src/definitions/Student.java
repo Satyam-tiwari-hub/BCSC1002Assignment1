@@ -69,6 +69,16 @@ public class Student {
         this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
     }
 
+    /**
+     * This method is used to display number of books issued.
+     *
+     * @param numberOfBooksIssuedByTheStudent Total number of books issued.
+     * @return return int value
+     */
+    public int numberOfBooksIssued(int numberOfBooksIssuedByTheStudent) {
+        return numberOfBooksIssuedByTheStudent;
+    }
+
     @Override
     public String toString() {
         return "\nFirst Name='" + firstName +
