@@ -43,6 +43,15 @@ public class Book {
         this.ISBN_NUMBER = ISBN_NUMBER;
     }
 
+    /**
+     * This method allow us to issue a book.
+     *
+     * @param bookName The name of the book we want to issue.
+     */
+    public void newBook(String bookName) {
+        System.out.println("Thank you for issuing \"" + bookName + "\".";);
+    }
+
     @Override
     public String toString() {
         return "\ndefinitions.Book Name" + bookName + "\nAuthor Name" + authorName
