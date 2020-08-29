@@ -30,4 +30,12 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+    public long getISBN_NUMBER() {
+        return ISBN_NUMBER;
+    }
+
+    public void setISBN_NUMBER(long ISBN_NUMBER) {
+        this.ISBN_NUMBER = ISBN_NUMBER;
+    }
 }
