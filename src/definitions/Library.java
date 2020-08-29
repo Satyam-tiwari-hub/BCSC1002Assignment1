@@ -13,5 +13,12 @@ public class Library {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
 
+    public String[] getBooksCurrentlyAvailable() {
+        return booksCurrentlyAvailable;
+    }
+
+    public void setBooksCurrentlyAvailable(String[] booksCurrentlyAvailable) {
+        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
+    }
 }
 
