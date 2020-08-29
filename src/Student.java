@@ -39,4 +39,12 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
 }
