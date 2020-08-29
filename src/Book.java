@@ -8,4 +8,10 @@ public class Book {
         authorName = null;
         ISBN_NUMBER = 0;
     }
+
+    public Book(String bookName, String authorName, long ISBN_NUMBER) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.ISBN_NUMBER = ISBN_NUMBER;
+    }
 }
