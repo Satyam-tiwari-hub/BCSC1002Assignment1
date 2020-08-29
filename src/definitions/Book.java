@@ -58,7 +58,7 @@ public class Book {
      * @param previouslyIssuedBook The name of the books issued previously.
      */
     public void doReturn(String previouslyIssuedBook) {
-        System.out.println("Thank you for returning\"" + previouslyIssuedBook + "\".");
+        System.out.println("Thank you for returning \"" + previouslyIssuedBook + "\".");
     }
 
 

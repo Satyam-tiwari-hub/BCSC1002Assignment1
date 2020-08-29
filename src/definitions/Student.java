@@ -71,7 +71,6 @@ public class Student {
     /**
      * This method is used to display number of books issued.
      *
-     * @param numberOfBooksIssuedByTheStudent Total number of books issued.
      * @return return int value
      */
     public int numberOfBooksIssued() {

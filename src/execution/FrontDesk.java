@@ -18,13 +18,13 @@ public class FrontDesk {
     public static final int EXIT = 4;
 
     public static void main(String[] args) {
+        Student student = new Student();
         Scanner scanner = new Scanner(System.in);
         int userInput;
         Book book = new Book();
         String bookName;
         String previouslyIssuedBook;
-        Student student = new Student();
-        int allIssuedBooks;
+
         do {
             System.out.println("_=_=__=_=_" + "Welcome To The Front Desk" + "_=_=__=_=_");
             System.out.println("How may I Help you today?");
@@ -35,27 +35,21 @@ public class FrontDesk {
             System.out.println("Enter your choice (1...4):");
             userInput = scanner.nextInt();
             switch (userInput) {
-                case NEW_BOOK:
+                case NEW_BOOK -> {
                     System.out.println("Enter the name of book you want to issue:");
                     scanner.nextLine();
                     bookName = scanner.nextLine();
                     book.newBook(bookName);
-                    break;
-                case PREVIOUSLY_ISSUED_BOOK:
+                }
+                case PREVIOUSLY_ISSUED_BOOK -> {
                     System.out.println("Enter the name of book you want to return:");
                     scanner.nextLine();
                     previouslyIssuedBook = scanner.nextLine();
                     book.doReturn(previouslyIssuedBook);
-                    break;
-                case ALL_ISSUED_BOOKS:
-                    student.numberOfBooksIssued();
-                    break;
-                case EXIT:
-                    System.out.println("Thank You");
-                    break;
-                default:
-                    System.out.println("Enter right choice:");
-                    break;
+                }
+                case ALL_ISSUED_BOOKS -> student.numberOfBooksIssued();
+                case EXIT -> System.out.println("Thank You");
+                default -> System.out.println("Enter right choice:");
             }
         } while (userInput != EXIT);
         scanner.close();
