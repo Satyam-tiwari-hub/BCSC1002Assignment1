@@ -49,7 +49,10 @@ public class FrontDesk {
                     break;
                 case ALL_ISSUED_BOOKS:
                     student.numberOfBooksIssued();
-
+                case EXIT:
+                    System.out.println("Thank You");
+                default:
+                    System.out.println("Enter right choice:");
             }
 
         }
