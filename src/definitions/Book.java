@@ -49,8 +49,18 @@ public class Book {
      * @param bookName The name of the book we want to issue.
      */
     public void newBook(String bookName) {
-        System.out.println("Thank you for issuing \"" + bookName + "\".";);
+        System.out.println("Thank you for issuing \"" + bookName + "\".");
     }
+
+    /**
+     * This method allow us to return a previously issued book.
+     *
+     * @param previouslyIssuedBook The name of the books issued previously.
+     */
+    public void doReturn(String previouslyIssuedBook) {
+        System.out.println("Thank you for returning\"" + previouslyIssuedBook + "\".");
+    }
+
 
     @Override
     public String toString() {
