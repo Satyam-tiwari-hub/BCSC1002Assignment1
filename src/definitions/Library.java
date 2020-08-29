@@ -8,4 +8,10 @@ package definitions;
 
 public class Library {
     private String[] booksCurrentlyAvailable;
+
+    public Library(String[] booksCurrentlyAvailable) {
+        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
+    }
+
 }
+
