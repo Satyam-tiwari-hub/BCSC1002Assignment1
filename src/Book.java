@@ -38,4 +38,10 @@ public class Book {
     public void setISBN_NUMBER(long ISBN_NUMBER) {
         this.ISBN_NUMBER = ISBN_NUMBER;
     }
+
+    @Override
+    public String toString() {
+        return "\nBook Name" + bookName + "\nAuthor Name" + authorName
+                + "\nISBN Number" + ISBN_NUMBER;
+    }
 }
