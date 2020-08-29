@@ -47,4 +47,12 @@ public class Student {
     public void setUniversityRollNumber(long universityRollNumber) {
         this.universityRollNumber = universityRollNumber;
     }
+
+    public int getNumberOfBooksIssuedByTheStudent() {
+        return numberOfBooksIssuedByTheStudent;
+    }
+
+    public void setNumberOfBooksIssuedByTheStudent(int numberOfBooksIssuedByTheStudent) {
+        this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
+    }
 }
