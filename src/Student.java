@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Student {
     private String firstName;
     private String middleName;
@@ -62,5 +64,15 @@ public class Student {
 
     public void setNamesOfTheBooksIssuedByTheStudent(String[] namesOfTheBooksIssuedByTheStudent) {
         this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
+    }
+
+    @Override
+    public String toString() {
+        return "\nFirst Name='" + firstName +
+                "\nMiddle Name='" + middleName +
+                "\nLast Name='" + lastName +
+                "\nUniversity RollNumber=" + universityRollNumber +
+                "\nNumber Of Books Issued By The Student=" + numberOfBooksIssuedByTheStudent +
+                "\nNames Of The Books Issued By The Student=" + Arrays.toString(namesOfTheBooksIssuedByTheStudent);
     }
 }
