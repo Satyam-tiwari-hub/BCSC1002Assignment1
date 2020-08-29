@@ -16,7 +16,15 @@ public class FrontDesk {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("_=_=__=_=_" + "Welcome To The Front Desk" + "_=_=__=_=_");
+            System.out.println("How may I Help you today?");
+            System.out.println("1. Issues a new book for me.");
+            System.out.println("2. Return a previously issues book for me.");
+            System.out.println("3. Show me all my issues books.");
+            System.out.println("4. Exit.");
 
+        }
 
     }
 }
