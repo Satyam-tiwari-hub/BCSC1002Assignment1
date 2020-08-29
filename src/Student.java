@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     private String firstName;
@@ -74,5 +75,25 @@ public class Student {
                 "\nUniversity RollNumber=" + universityRollNumber +
                 "\nNumber Of Books Issued By The Student=" + numberOfBooksIssuedByTheStudent +
                 "\nNames Of The Books Issued By The Student=" + Arrays.toString(namesOfTheBooksIssuedByTheStudent);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return universityRollNumber == student.universityRollNumber &&
+                numberOfBooksIssuedByTheStudent == student.numberOfBooksIssuedByTheStudent &&
+                Objects.equals(firstName, student.firstName) &&
+                Objects.equals(middleName, student.middleName) &&
+                Objects.equals(lastName, student.lastName) &&
+                Arrays.equals(namesOfTheBooksIssuedByTheStudent, student.namesOfTheBooksIssuedByTheStudent);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(firstName, middleName, lastName, universityRollNumber, numberOfBooksIssuedByTheStudent);
+        result = 31 * result + Arrays.hashCode(namesOfTheBooksIssuedByTheStudent);
+        return result;
     }
 }
