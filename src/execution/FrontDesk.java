@@ -39,6 +39,13 @@ public class FrontDesk {
                     bookName = scanner.nextLine();
                     book.newBook(bookName);
                     break;
+                case PREVIOUSLY_ISSUED_BOOK:
+                    System.out.println("Enter the name of book you want to return:");
+                    scanner.nextLine();
+                    previouslyIssuedBook = scanner.nextLine();
+                    book.doReturn(bookName);
+                    break;
+                ;
 
 
             }
