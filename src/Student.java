@@ -55,4 +55,12 @@ public class Student {
     public void setNumberOfBooksIssuedByTheStudent(int numberOfBooksIssuedByTheStudent) {
         this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
     }
+
+    public String[] getNamesOfTheBooksIssuedByTheStudent() {
+        return namesOfTheBooksIssuedByTheStudent;
+    }
+
+    public void setNamesOfTheBooksIssuedByTheStudent(String[] namesOfTheBooksIssuedByTheStudent) {
+        this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
+    }
 }
